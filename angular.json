@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "simkrs:build:production"
+              "buildTarget": "simkrs:build:production"
             },
             "development": {
-              "browserTarget": "simkrs:build:development"
+              "buildTarget": "simkrs:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "simkrs:build"
+            "buildTarget": "simkrs:build"
           }
         },
         "test": {
