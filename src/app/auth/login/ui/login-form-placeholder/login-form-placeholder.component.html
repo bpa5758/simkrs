@@ -1,19 +1,16 @@
 <div class="card shadow">
   <div class="card-body">
     <div class="text-center my-3">
-      <img
-        src="asset/img/logo.png"
-        class="placeholder rounded-circle bg-primary"
-        width="200"
-        height="200"
-        alt=""
-      />
+      <span
+        class="placeholder rounded-circle bg-success"
+        style="width: 200px; height: 200px"
+      ></span>
     </div>
     <div class="text-center placeholder-glow">
-      <span class="h4 fw-bold placeholder">RS BHAYANGKARA POLDA ACEH</span>
+      <span class="h4 fw-bold placeholder">{{ loginService.sim() }}</span>
     </div>
     <div class="text-center placeholder-glow">
-      <span class="h6 placeholder">SISTEM INFORMASI RUMAH SAKIT</span>
+      <span class="h6 placeholder">{{ loginService.ketSim() }}</span>
     </div>
     <div class="my-3">
       <form autocomplete="off">
