@@ -1,0 +1,13 @@
+.card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+    border: none; /* Remove border if needed */
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    background: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+    border: none; /* Remove border if needed */
+    border-radius: 10px;
+  }

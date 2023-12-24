@@ -1,0 +1,6 @@
+.row {
+    background-image: url('src/assets/img/bgLogin.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    /* color: white; */
+  }
