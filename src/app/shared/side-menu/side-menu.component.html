@@ -1,0 +1,93 @@
+<div
+  ngbAccordion
+  [closeOthers]="true"
+  class="accordion accordion-flush border-bottom"
+>
+  <div ngbAccordionItem [collapsed]="false">
+    <h2 ngbAccordionHeader>
+      <button ngbAccordionButton class="fw-bold text-bg-light">Home</button>
+    </h2>
+    <div ngbAccordionCollapse>
+      <div ngbAccordionBody class="p-0">
+        <ng-template>
+          <ul class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action active">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <i class="bi-fire me-1"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">Dashboard</div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <i class="bi-ui-checks-grid me-1 text-primary"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">Ketersediaan Kamar</div>
+              </div>
+            </a>
+          </ul>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div ngbAccordionItem [collapsed]="true">
+    <h2 ngbAccordionHeader>
+      <button ngbAccordionButton class="fw-bold text-bg-light">Rekap</button>
+    </h2>
+    <div ngbAccordionCollapse>
+      <div ngbAccordionBody class="p-0">
+        <ng-template>
+          <ul class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <i class="bi-fire me-1 text-primary"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">Dashboard</div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <i class="bi-ui-checks-grid me-1 text-primary"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">Ketersediaan Kamar</div>
+              </div>
+            </a>
+          </ul>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div ngbAccordionItem [collapsed]="true">
+    <h2 ngbAccordionHeader>
+      <button ngbAccordionButton class="fw-bold text-bg-light">Bpjs</button>
+    </h2>
+    <div ngbAccordionCollapse>
+      <div ngbAccordionBody class="p-0">
+        <ng-template>
+          <ul class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <i class="bi-window-stack me-1 text-primary"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">Antrean</div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <i class="bi-ui-checks-grid me-1 text-primary"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">V-Claim</div>
+              </div>
+            </a>
+          </ul>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
