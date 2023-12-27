@@ -6,7 +6,7 @@ export const aboutFeatureSelector = (
   state: AppStateInterface
 ): AboutStateInterface => state.About;
 
-export const isSubmittingSelector = createSelector(
+export const isAboutSubmittingSelector = createSelector(
   aboutFeatureSelector,
   (aboutState: AboutStateInterface) => aboutState.isSubmitting
 );
@@ -14,9 +14,4 @@ export const isSubmittingSelector = createSelector(
 export const aboutSelector = createSelector(
   aboutFeatureSelector,
   (aboutState: AboutStateInterface) => aboutState.about
-);
-
-export const isLoggedInSelector = createSelector(
-  aboutFeatureSelector,
-  (aboutState: AboutStateInterface) => aboutState.isLoggedIn
 );

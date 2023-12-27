@@ -1,5 +1,6 @@
 import { createReducer, on, Action } from '@ngrx/store';
 import { AboutStateInterface } from '../../interface/about.state.interface';
+
 import {
   getAboutAction,
   getAboutFailureAction,
@@ -10,7 +11,6 @@ import {
 export const initialState: AboutStateInterface = {
   isSubmitting: false,
   about: null,
-  isLoggedIn: false,
 };
 
 export const aboutReducer = createReducer(

@@ -1,37 +1,47 @@
-<div class="card shadow">
-  <div class="card-body">
-    <div class="text-center my-3">
-      <app-logo-company />
-    </div>
-    <div class="text-center">
-      <span class="h4 fw-bold">{{ loginService.sim() }}</span>
-    </div>
-    <div class="text-center">
-      <span class="h6">{{ loginService.ketSim() }}</span>
-    </div>
-    <div class="my-3">
-      <!-- <form (submit)="onSubmit()"> -->
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-        />
+@if (dataAbout$|async; as data){
+
+<div class="my-3 d-flex flex-column align-items-center">
+  <div class="card shadow col-sm-12 col-md-8 col-lg-8">
+    <div class="card-body">
+      <div class="text-center my-3">
+        <app-logo-company />
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-        />
+      <div class="text-center">
+        <span class="h2 fw-bold">{{ data.about?.alias }}</span>
       </div>
-      <button type="submit" class="btn btn-lg btn-primary" (click)="onSubmit()">
+      <div class="text-center">
+        <span class="h6 small">{{ data.about?.keterangan }}</span>
+      </div>
+      <div class="text-center mb-3">
+        <span class="h6 fw-bold">{{ data.about?.nama }}</span>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <!-- <form (submit)="onSubmit()"> -->
+        <div class="mb-3 w-100">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3 w-100">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="onSubmit()">
         Login
       </button>
       <!-- </form> -->
     </div>
   </div>
 </div>
+}

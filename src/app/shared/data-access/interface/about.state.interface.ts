@@ -1,7 +1,6 @@
-import { AbouteInterface } from './about.interface';
+import { AboutInterface } from './about.interface';
 
 export interface AboutStateInterface {
   isSubmitting: boolean;
-  about: AbouteInterface | null;
-  isLoggedIn: boolean | null;
+  about: AboutInterface | null;
 }

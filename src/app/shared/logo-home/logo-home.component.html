@@ -1,0 +1,19 @@
+@if (dataAbout$|async; as data){
+<div class="d-flex align-items-center">
+  <div class="flex-shrink-0">
+    <img
+      ngSrc="{{ env.uploadUrl + data.about?.img }}"
+      width="40"
+      height="40"
+      class="img-responsive rounded-circle"
+      alt="..."
+      priority
+    />
+  </div>
+  <div class="flex-column">
+    <div class="flex-grow-1 fw-bold ms-2 lh-1">SIMRS</div>
+    <div class="flex-grow-1 ms-2 lh-1 small">RS BHAYANGKARA POLDA NAD</div>
+  </div>
+</div>
+
+}

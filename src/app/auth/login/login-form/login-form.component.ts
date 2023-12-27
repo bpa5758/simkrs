@@ -8,12 +8,15 @@ import { getAboutAction } from 'src/app/shared/data-access/store/about/about.act
 import {
   aboutFeatureSelector,
   aboutSelector,
+  isAboutSubmittingSelector,
 } from 'src/app/shared/data-access/store/about/about.selectors';
+import { combineLatest } from 'rxjs';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-login-form',
   standalone: true,
-  imports: [LogoCompanyComponent],
+  imports: [LogoCompanyComponent, AsyncPipe],
   templateUrl: './login-form.component.html',
   styleUrl: './login-form.component.css',
 })
@@ -22,7 +25,11 @@ export class LoginFormComponent {
   loginService = inject(LoginService);
   router = inject(Router);
   aboutSimkrs = this.store.dispatch(getAboutAction());
-  about = this.store.select(aboutSelector);
+
+  dataAbout$ = combineLatest({
+    about: this.store.select(aboutSelector),
+    isSubmitting: this.store.select(isAboutSubmittingSelector),
+  });
 
   onSubmit() {
     this.router.navigateByUrl('/home');

@@ -1,8 +1,10 @@
+@if (dataAbout$|async; as data){
 <img
-  ngSrc="assets/img/logo.jpg"
+  ngSrc="{{ env.uploadUrl + data.about?.img }}"
   width="200"
   height="200"
-  class="card-responsive rounded-circle"
+  class="img-responsive rounded-circle"
   alt="..."
   priority
 />
+}
