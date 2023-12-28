@@ -1,0 +1,100 @@
+<div class="table-responsive rounded">
+  <table class="table table-sm align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Username</th>
+        <th scope="col">Nama</th>
+        <th scope="col">Role</th>
+        <th scope="col" class="text-center">
+          <i class="bi bi-gear-wide-connected"></i>
+        </th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1.</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>mdo</td>
+        <td class="text-center">
+          <div ngbDropdown container="body">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm rounded-pill"
+              ngbDropdownToggle
+            >
+              Actions
+            </button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem (click)="onEdit()">Edit</button>
+              <button ngbDropdownItem (click)="onResetPassword()">
+                Reset Password
+              </button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem (click)="onDelete()">Delete</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2.</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>fat</td>
+        <td class="text-center">
+          <div ngbDropdown container="body">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm rounded-pill"
+              ngbDropdownToggle
+            >
+              Actions
+            </button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem (click)="onEdit()">Edit</button>
+              <button ngbDropdownItem (click)="onResetPassword()">
+                Reset Password
+              </button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem (click)="onDelete()">Delete</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3.</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>twitter</td>
+        <td class="text-center">
+          <div ngbDropdown container="body">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm rounded-pill"
+              ngbDropdownToggle
+            >
+              Actions
+            </button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem (click)="onEdit()">Edit</button>
+              <button ngbDropdownItem (click)="onResetPassword()">
+                Reset Password
+              </button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem (click)="onDelete()">Delete</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<ngb-pagination
+  [collectionSize]="120"
+  [(page)]="page"
+  [maxSize]="5"
+  [rotate]="true"
+  [ellipses]="false"
+  [boundaryLinks]="true"
+/>

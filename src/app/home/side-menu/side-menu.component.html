@@ -5,7 +5,7 @@
         <ul class="list-unstyled mb-0">
           <li class="py-2">
             <strong class="d-flex w-100 align-items-center fw-semibold">
-              <i class="bi-house text-danger me-2"></i>
+              <i class="bi bi-house-fill text-primary me-2"></i>
               Home
             </strong>
 
@@ -34,7 +34,7 @@
         <ul class="list-unstyled mb-0">
           <li class="py-2">
             <strong class="d-flex w-100 align-items-center fw-semibold">
-              <i class="bi-card-checklist text-warning me-2"></i>
+              <i class="bi bi-book-half text-success me-2"></i>
               Pendaftaran
             </strong>
 
@@ -70,7 +70,7 @@
         <ul class="list-unstyled mb-0">
           <li class="py-2">
             <strong class="d-flex w-100 align-items-center fw-semibold">
-              <i class="bi-house text-success me-2"></i>
+              <i class="bi bi-gear-fill text-danger me-2"></i>
               Pelayanan
             </strong>
 
@@ -105,7 +105,7 @@
         <ul class="list-unstyled mb-0">
           <li class="py-2">
             <strong class="d-flex w-100 align-items-center fw-semibold">
-              <i class="bi-house text-primary me-2"></i>
+              <i class="bi bi-capsule-pill text-warning-emphasis me-2"></i>
               Farmasi
             </strong>
 
@@ -155,7 +155,58 @@
             <ul class="list-unstyled mb-0">
               <li class="py-2">
                 <strong class="d-flex w-100 align-items-center fw-semibold">
-                  <i class="bi-house text-info me-2"></i>
+                  <i class="bi bi-people-fill text-primary me-2"></i>
+                  SDM
+                </strong>
+
+                <ul class="list-unstyled fw-normal py-2 small ps-4">
+                  <li>
+                    <a
+                      routerLink="/home/sdm/user"
+                      routerLinkActive="active"
+                      class="btn btn-outline-secondary text-nowrap text-nowrap mb-1 d-inline-block rounded border-0"
+                      (click)="onClose()"
+                    >
+                      User</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-unstyled mb-0">
+              <li class="py-2">
+                <strong class="d-flex w-100 align-items-center fw-semibold">
+                  <i class="bi bi-wallet-fill text-success me-2"></i>
+                  Tarif
+                </strong>
+
+                <ul class="list-unstyled fw-normal py-2 small ps-4">
+                  <li>
+                    <a
+                      href="/docs/5.3/getting-started/contents/"
+                      class="btn btn-outline-secondary text-nowrap text-nowrap mb-1 d-inline-block rounded border-0"
+                      (click)="onClose()"
+                    >
+                      IGD</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/docs/5.3/getting-started/browsers-devices/"
+                      class="btn text-nowrap btn-outline-secondary text-nowrap mb-1 d-inline-block rounded border-0"
+                    >
+                      Poli</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-unstyled mb-0">
+              <li class="py-2">
+                <strong class="d-flex w-100 align-items-center fw-semibold">
+                  <i
+                    class="bi bi-file-earmark-richtext-fill text-danger me-2"
+                  ></i>
                   Rekap
                 </strong>
 
@@ -214,6 +265,37 @@
                     >
                   </li>
                 </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled mb-0">
+          <li class="py-2">
+            <strong class="d-flex w-100 align-items-center fw-semibold">
+              <i
+                class="bi bi-gear-wide-connected text-warning-emphasis me-2"
+              ></i>
+              Tools
+            </strong>
+
+            <ul class="list-unstyled fw-normal py-2 small ps-4">
+              <li>
+                <a
+                  href="/docs/5.3/getting-started/contents/"
+                  class="btn btn-outline-secondary text-nowrap text-nowrap mb-1 d-inline-block rounded border-0"
+                  (click)="onClose()"
+                >
+                  Vclaim</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/docs/5.3/getting-started/browsers-devices/"
+                  class="btn text-nowrap btn-outline-secondary text-nowrap mb-1 d-inline-block rounded border-0"
+                >
+                  Antrean MJKN</a
+                >
               </li>
             </ul>
           </li>

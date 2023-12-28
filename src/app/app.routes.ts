@@ -33,7 +33,21 @@ export const routes: Routes = [
             (m) => m.KetersediaanKamarComponent
           ),
       },
+      {
+        path: 'sdm',
+        children: [
+          { path: '', redirectTo: 'user', pathMatch: 'full' },
+          {
+            path: 'user',
+            loadComponent: () =>
+              import('./sdm/ui/user-home/user-home.component').then(
+                (m) => m.UserHomeComponent
+              ),
+          },
+        ],
+      },
     ],
   },
+
   { path: '**', redirectTo: 'login', pathMatch: 'full' },
 ];

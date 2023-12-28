@@ -1,0 +1,7 @@
+input:focus{
+    box-shadow: none;
+}
+
+.bi{
+    -webkit-text-stroke: 1px;
+  }
