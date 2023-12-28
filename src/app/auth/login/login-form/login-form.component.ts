@@ -24,7 +24,6 @@ export class LoginFormComponent {
   store = inject(Store<AppStateInterface>);
   loginService = inject(LoginService);
   router = inject(Router);
-  aboutSimkrs = this.store.dispatch(getAboutAction());
 
   dataAbout$ = combineLatest({
     about: this.store.select(aboutSelector),
