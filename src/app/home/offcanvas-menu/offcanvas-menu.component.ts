@@ -13,4 +13,7 @@ import { RouterModule } from '@angular/router';
 })
 export class OffcanvasMenuComponent {
   activeOffcanvas = inject(NgbActiveOffcanvas);
+  onClose() {
+    this.activeOffcanvas.dismiss();
+  }
 }

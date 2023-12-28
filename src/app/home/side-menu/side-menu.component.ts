@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, Output, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
@@ -10,4 +10,9 @@ import { RouterModule } from '@angular/router';
   templateUrl: './side-menu.component.html',
   styleUrls: ['./side-menu.component.css'],
 })
-export class SideMenuComponent {}
+export class SideMenuComponent {
+  @Output() closed: EventEmitter<boolean> = new EventEmitter<boolean>();
+  onClose() {
+    this.closed.emit(true);
+  }
+}
